@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Cafe - Fast and Reliable Internet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #957DAD;
+}
+
+header {
+    background-color: #FEC8D8;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #957DAD;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #A8D1D1;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+button {
+    background-color: #619196;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218B82;
+}
+
+#hero {
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+#hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    background-color: #fff;
+    color: #333;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#hero button:hover {
+    background-color: #f7f7f7;
+}
+#services ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#services li {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+services i {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#pricing table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#pricing th,
+#pricing td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Fast and Reliable Internet</h1>
+            <p>Get online with our high-speed internet and enjoy a comfortable and quiet environment.</p>
+            <button>Learn More</button>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a team of internet enthusiasts who believe that everyone deserves access to fast and reliable internet. Our internet cafe is designed to provide a comfortable and quiet environment for you to get online and stay productive.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li><i class="fas fa-wifi"></i> High-Speed Internet</li>
+                <li><i class="fas fa-computer"></i> Modern Computers</li>
+                <li><i class="fas fa-printer"></i> Printing and Scanning Services</li>
+                <li><i class="fas fa-coffee"></i> Refreshments and Snacks</li>
+            </ul>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <table>
+                <tr>
+                    <th>Package</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Basic</td>
+                    <td>$5/hour</td>
+                    <td>Access to high-speed internet and modern computers</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>$10/hour</td>
+                    <td>Access to high-speed internet, modern computers, and printing and scanning services</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us to learn more about our services or to book a session.</p>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Internet Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js"></script>
+</body>
+</html>
+
