@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+    <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+header {
+  background-color: #747B90;
+  color: #98B4D1;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.converter {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.converter h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="button"] {
+  background-color: #D4B2A7;
+  color: #574339;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="button"]:hover {
+  background-color: #AED0E5;
+}
+
+#result-celsius, #result-fahrenheit {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #7DBACF;
+} </style>
+    
+</head>
+<body>
+  <header>
+    <h1>Temperature Converter</h1>
+  </header>
+  <main>
+    <section class="converter">
+      <h2>Celsius to Fahrenheit</h2>
+      <form>
+        <label for="celsius">Celsius:</label>
+        <input type="number" id="celsius" value="0">
+        <button type="button" id="convert-celsius">Convert</button>
+        <p id="result-celsius"></p>
+      </form>
+    </section>
+    <section class="converter">
+      <h2>Fahrenheit to Celsius</h2>
+      <form>
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" value="0">
+        <button type="button" id="convert-fahrenheit">Convert</button>
+        <p id="result-fahrenheit"></p>
+      </form>
+    </section>
+  </main>
+  <script>
+    const celsiusInput = document.getElementById('celsius');
+const fahrenheitInput = document.getElementById('fahrenheit');
+const convertCelsiusButton = document.getElementById('convert-celsius');
+const convertFahrenheitButton = document.getElementById('convert-fahrenheit');
+const resultCelsiusElement = document.getElementById('result-celsius');
+const resultFahrenheitElement = document.getElementById('result-fahrenheit');
+
+convertCelsiusButton.addEventListener('click', () => {
+  const celsiusValue = parseFloat(celsiusInput.value);
+  const fahrenheitValue = (celsiusValue * 9/5) + 32;
+  resultCelsiusElement.textContent = `Fahrenheit: ${fahrenheitValue.toFixed(2)}`;
+});
+
+convertFahrenheitButton.addEventListener('click', () => {
+  const fahrenheitValue = parseFloat(fahrenheitInput.value);
+  const celsiusValue = (fahrenheitValue - 32) * 5/9;
+  resultFahrenheitElement.textContent = `Celsius: ${celsiusValue.toFixed(2)}`;
+});  </script>
+</body>
+</html>
